@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 06/02/2019
+  Fecha de modificación: 16/02/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -12,13 +12,15 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "apiSocket.h"
-//flags = 4163 wlp6s0 up
 int main(){
-  printf("Iteracion de solo crear socket, mostrar socket y cerrar socket\n");
+  /*printf("Iteracion de solo crear socket, mostrar socket y cerrar socket\n");
   showOnlySocket();
   printf("\nIteracion de solo crear socket, mostrar socket, muestra"
   "interfaz de red y cerrar socket");
-  showInterface();
+  showInterface();*/
+  createARPTrama();
+  //initARPWaitingForTrama();
+  //listenTrama();
   return 0;
   /*Valores de FLAGS
   IFF_UP=1
