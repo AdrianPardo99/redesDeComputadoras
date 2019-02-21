@@ -12,6 +12,7 @@ void printMessage(datos *trama){
   printf("\n\n");
 }
 
+/*Función que permite cambiar el color del buffer de salida (stdout)*/
 void setColor(int i,int des){
   if(des==1){
     switch(i){
@@ -102,21 +103,31 @@ void recibeTrama(socketRaw sock,datos *trama,int lenght){
 /*Función que recibe el mensaje del chat de sockets*/
 void recibeMensaje(socketRaw sock,datos *trama){
   int tam;
-  while(1){
-    tam=recvfrom(sock,trama,1514,0,NULL,0);
+  gettimeofday(&start,NULL);
+  while(mtime<=10000){
+    tam=recvfrom(sock,trama,1514,MSG_DONTWAIT,NULL,0);
     if(isAnError(tam)){
-      perror("Error al recibir la trama\n");
-      closeSocket();
-      exit(1);
+      //perror("Error al recibir la trama\n");
     }else{
       if(!memcmp(trama+6,macCompa+0,6)&&!memcmp(trama+0,macOrigen+0,6)){
           imprimeTrama(trama,tam);
           printMessage(trama);
+          gettimeofday(&end,NULL);
+          seconds = end.tv_sec - start.tv_sec;
+          useconds = end.tv_usec - start.tv_usec;
+          mtime = ((seconds)*1000 + useconds/1000.0)+0.5;
           break;
       }
     }
+    gettimeofday(&end,NULL);
+    seconds = end.tv_sec - start.tv_sec;
+    useconds = end.tv_usec - start.tv_usec;
+    mtime = ((seconds)*1000 + useconds/1000.0)+0.5;
   }
-
+  printf("Tiempo de espera %ld milliseconds agotado UnU\n",mtime);
+  mtime = 0;
+  useconds = 0;
+  seconds = 0;
 }
 
 /*Función que envia trama ethernet*/

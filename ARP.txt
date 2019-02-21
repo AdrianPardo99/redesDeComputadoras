@@ -1,0 +1,36 @@
+
+/*ARP Especificación
+  MACDestino 6 bytes (Broadcast en ocasiones)
+  MACOrigen 6 bytes
+  Ethertype 2 bytes -> 0X0806
+  Tipo de hardware 2 bytes -> (0x0001 Ethernet 10 Mbps),
+    (0X0006 Redes IEEE 802.5 TokenRing),
+    (0x000F Frame Relay),
+    (0X0010 ATM)
+  Tipo de protocolo 0x0800
+  Longitud de dirección de hardware 0x06
+  Longitud de dirección de protocolo 0x04
+  Código de operación 2 bytes -> (0x0001 Solicitud ARP),
+    (0x0002 Respuesta ARP),
+    (0x0008 Solicitud ARP Inversa) IP a partir de MAC,
+    (0X0009 Respuesta ARP Inversa)
+  MACOrigen 6 bytes
+  IPOrigen  4 bytes
+  MACDestino 6 bytes (al inicio 0)
+  IPDestino 4 bytes
+
+  En IPv6 Es diferente ARP - se usa neightborhood
+  Filtros: MACD,MACO,Ethertype,Opcode,SPA=IPD, TargetPA=IPO
+
+  MAC's (0->11 byte)
+  Ethertype (12->13 byte)
+  HardwareType (14->15 byte)
+  IP_Protocol (16->17 byte)
+  HardwareLength (18 byte)
+  ProtocolLength (19 byte)
+  OperationCode (20->21 byte)
+  MACo (22->27 byte)
+  IPo (28->31 byte)
+  MACd (32->37 byte)
+  IPd (38->41)
+  */

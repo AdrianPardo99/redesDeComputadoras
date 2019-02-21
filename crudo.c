@@ -7,18 +7,30 @@
 */
 /*AF_PACKET packet(7)
   man 7 packet
+  linea para compilar con BD de mysql gcc -I/usr/include/mysql/ crudo.c -L/usr/lib/mysql -lmysqlclient -o crudo
 */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include "apiSocket.h"
-int main(){
+int main(int argc,char **argv){
   /*printf("Iteracion de solo crear socket, mostrar socket y cerrar socket\n");
   showOnlySocket();
   printf("\nIteracion de solo crear socket, mostrar socket, muestra"
   "interfaz de red y cerrar socket");
   showInterface();*/
-  createARPTrama();
+  //createARPTrama();
+  if(argc>1){
+    if(argc>2){
+      initScanARP(1);
+    }else{
+      initScanARP(0);
+    }
+  }else{
+    createARPTrama();
+  }
+  //initScanARP();
+  //createChatSockets();
   //initARPWaitingForTrama();
   //listenTrama();
   return 0;

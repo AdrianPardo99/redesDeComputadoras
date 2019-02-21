@@ -10,12 +10,13 @@
 #include "initSockets.h"
 #include "hardwareInfo.h"
 #include "getSend.h"
+#include "sqlLib.h"
 #include "timer.h"
 #include "arpFile.h"
 
 /*Función que envia mensajes*/
 void estructuraMensaje(datos *trama,datos *message){
-  memcpy(trama+0,macCompa+0,6);
+  memcpy(trama+0,macProfe+0,6);
   memcpy(trama+6,macOrigen+0,6);
   memcpy(trama+12,ethertype+0,2);
   memcpy(trama+14,message+0,sizeChar(message));
@@ -63,6 +64,7 @@ void chatSocket(){
       estructuraMensaje(tramaEnv,messages);
       enviaTrama(packet_socket,tramaEnv,indice);
       recibeMensaje(packet_socket,tramaGet);
+      free(messages);
       break;
     }else{
       estructuraMensaje(tramaEnv,messages);
@@ -117,5 +119,19 @@ void showOnlySocket(){
   if(!isAnError(packet_socket)){
     showSocketNumber();
     closeSocket();
+  }
+}
+
+/*Función que intancia el chat con sockets 7u7*/
+void createChatSockets(){
+  createSocket();
+  openSocket();
+  if(!isAnError(packet_socket)){
+    showSocketNumber();
+    obtainHardwareData();
+    chatSocket();
+    closeSocket();
+  }else{
+    perror("Error al abrir la función createChatSockets");
   }
 }
