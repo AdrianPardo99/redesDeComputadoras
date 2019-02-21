@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 16/02/2019
+  Fecha de modificación: 21/02/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -12,6 +12,9 @@
 #include <sys/ioctl.h>
 #include <net/if.h>
 #include <string.h>
+#include <sys/time.h>
+#include <netinet/in.h>
+
 typedef int socketRaw;
 typedef struct ifreq interfaces;
 typedef unsigned char datos;
@@ -19,7 +22,7 @@ typedef char name;
 typedef int dato;
 typedef short tinyDato;
 typedef struct sockaddr_ll tramas;
-
+typedef struct timeval timer;
 /*Uso de variables globales para trabajar más adelante con cada libreria de la
 api creada*/
 socketRaw packet_socket;
@@ -44,21 +47,30 @@ ARPReqI[2]={0x00,0x09},
 opARP[2],
 IPP[2]={0x08,0x00},
 typeHar[2]={0x00,0x01},
-lonP[2]={0x06,0x04};
+lonP[2]={0x06,0x04},
+ipPrueba[15],
+*red,
+*sub;
 
 dato mtuO,
 metricO,
 des,
 num,
 indice,
-ARPPetition;
+ARPPetition,
+ban=0,
+contador=0;
 
 name *cpHardware,
-binFlags[100];
+binFlags[100],*nameSSID;
 
 tinyDato flags;
 
 interfaces nic;
+
+timer start,end;
+
+long mtime=0,seconds=0,useconds=0;
 
 /*Función que realiza algo similar a strlen*/
 int sizeChar(char *arr){
@@ -131,4 +143,38 @@ int isMacOrIpDest(datos *trama){
 /*Función que verifica si la mac destino es ARP*/
 int isBroadcastMac(datos *trama){
   return !(memcmp(trama+0,macBroadcast+0,6));
+}
+
+/*Función que converte una cadena de caracteres al valor hexadecimal que necesita la IP*/
+void charToIPHex(char *cad){
+  struct in_addr addr;
+  int i,j,k=0,n=0,ipC;
+  char cen[3];
+  if (inet_aton(cad, &addr) == 0) {
+    fprintf(stderr, "Invalid address\n");
+    close(packet_socket);
+    exit(EXIT_FAILURE);
+  }
+
+  j=sizeChar(inet_ntoa(addr));
+  for(i=0;i!=j+1;i++){
+    if(*(inet_ntoa(addr)+i)==0x2e){
+      sscanf(cen,"%d",&ipC);
+      *(ipD+n)=ipC;
+      n++;
+      *(cen)=0;
+      *(cen+1)=0;
+      *(cen+2)=0;
+      k=0;
+    }else{
+      *(cen+k)=*(inet_ntoa(addr)+i);
+      k++;
+    }
+  }
+  sscanf(cen,"%d",&ipC);
+  *(ipD+n)=ipC;
+}
+
+int isFilterArp(datos *trama,int tam){
+  return isARP(trama)&&isMyIP(trama)&&isMacOrIpDest(trama)&&tam>=42;
 }

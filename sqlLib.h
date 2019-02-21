@@ -1,3 +1,10 @@
+/*Author: Adrian González Pardo
+  Email: gozapaadr@gmail.com
+  Nickname: DevCrack
+  Fecha de modificación: 21/02/2019
+  GitHub: AdrianPardo99
+  Licencia Creative Commons CC BY-SA
+*/
 #include <mysql/mysql.h>
 
 MYSQL *conn;
