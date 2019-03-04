@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 21/02/2019
+  Fecha de modificación: 03/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -34,9 +34,8 @@ void recibeOfRequestOfARP(socketRaw sock,datos *trama,int des){
   seconds = 0;
   gettimeofday(&start,NULL);
   while(mtime<200){
-    tam=recvfrom(sock,trama,1514,0,NULL,0);
+    tam=recvfrom(sock,trama,1514,MSG_DONTWAIT,NULL,0);
     if(isAnError(tam)){
-      perror("Error al recibir la trama\n");
     }else{
       if(isFilterArp(trama,tam)){
         puts("Trama de respuesta:");
@@ -186,6 +185,7 @@ void initScanARP(int des){
   openSocket();
   if(!isAnError(packet_socket)){
     obtainHardwareData();
+    if(isAnError(indice)){exit(1);}
     *(opARP)=0x00;
     *(opARP+1)=0x01;
     red=(char*)malloc(sizeof(char)*4);
@@ -221,10 +221,13 @@ void initScanARP(int des){
       nameSSID=(char *)malloc(sizeof(char)*200);
       printf("Ingresa un nombre para clasificar la red en la Base de datos: ");
       fflush(stdin);
-      scanf("%s",nameSSID);
+      fgets(nameSSID,200,stdin);
+      *(nameSSID+sizeChar(nameSSID))='\0';
       nameNetwork(nameSSID);
     }
     fflush(stdin);
+    printf("%sPor favor presiona enter para iniciar el escaneo de la red%s\n",
+      KBLU,KNRM);
     getchar();
     while(memcmp(sub+0,ipD+0,4)){
       printf("%sIP: %d.%d.%d.%d%s\n",KMAG,*(ipD),*(ipD+1),*(ipD+2),*(ipD+3),KNRM);

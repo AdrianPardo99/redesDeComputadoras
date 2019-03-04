@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 21/02/2019
+  Fecha de modificación: 03/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -11,9 +11,9 @@ MYSQL *conn;
 MYSQL_RES *res;
 MYSQL_ROW row;
 char *server = "localhost";
-char *user = "root";
-char *password = "toor";
-char *database = "arpScanner";
+char *user;
+char *password;
+char *database;
 int status,idNetwork;
 MYSQL_STMT *stmt;
 
@@ -40,7 +40,10 @@ void freeResult(){
 void nameNetwork(char *name){
   int bandera=0,i;
   initConnection();
-  char sql[100]="SELECT idRed FROM SSID where nameOrDescription='";
+  char *sql;
+  sql=(char*)malloc(sizeof(char)*100);
+  memcpy(sql+0,"SELECT idRed FROM SSID where nameOrDescription='",
+    sizeChar("SELECT idRed FROM SSID where nameOrDescription='")+1);
   memcpy(sql+1+sizeChar(sql),name+0,sizeChar(name)+1);
   memcpy(sql+1+sizeChar(sql),"';",2);
   if(!mysql_query(conn,sql)){
@@ -53,13 +56,16 @@ void nameNetwork(char *name){
         ban=1;
       }
       if(!ban){
-        for(i=0;i!=100;i++){*(sql+i)=0;}
-        memcpy(sql+0,"INSERT INTO SSID VALUES(null,'",sizeChar("INSERT INTO SSID VALUES(null,'")+1);
-        memcpy(sql+1+sizeChar(sql),name,sizeChar(sql)+1);
-        memcpy(sql+1+sizeChar(sql),"');",3);
+        free(sql);
+        sql=(char*)malloc(sizeof(char)*100);
+        memcpy(sql+0,"INSERT INTO SSID VALUES(null,'",sizeChar("INSERT INTO "
+          "SSID VALUES(null,'")+1);
+        memcpy(sql+1+sizeChar(sql),name,sizeChar(name)+1);
+        memcpy(sql+1+sizeChar(sql),"');",sizeChar("');")+1);
         status=mysql_query(conn,sql);
         if(!status){
-          for(i=0;i!=100;i++){*(sql+i)=0;}
+          free(sql);
+          sql=(char*)malloc(sizeof(char)*100);
           memcpy(sql+0,"SELECT idRed FROM SSID where nameOrDescription='",
             sizeChar("SELECT idRed FROM SSID where nameOrDescription='")+1);
           memcpy(sql+1+sizeChar(sql),name+0,sizeChar(name)+1);
@@ -77,21 +83,22 @@ void nameNetwork(char *name){
             }
           }
         }else{
-          printf("Error al hacer la inserción del SSID\n");
+          perror("Error al hacer la inserción del SSID ");
           exit(1);
         }
       }else{
-        printf("Error al crear este nombre de red (repetitivo en la BD)\n");
+        perror("Error al crear este nombre de red (repetitivo en la BD) ");
         exit(1);
       }
     }else{
-      printf("Error de conexión \n");
+      perror("Error de conexión  ");
       exit(1);
     }
   }else{
     printf("Error sql :'v\n%s",sql);
     exit(1);
   }
+  free(sql);
   freeResult();
   closeConnection();
 }
@@ -121,10 +128,12 @@ void createStoredProcedure(datos *MAC,datos *IP){
   sprintf(sql+1+sizeChar(sql),"%d",*(MAC+4));
   memcpy(sql+1+sizeChar(sql),",",1);
   sprintf(sql+1+sizeChar(sql),"%d",*(MAC+5));
-  memcpy(sql+1+sizeChar(sql),",CURDATE(),CURTIME());",sizeChar(",CURDATE(),CURTIME());")+1);
+  memcpy(sql+1+sizeChar(sql),",CURDATE(),CURTIME());",
+    sizeChar(",CURDATE(),CURTIME());")+1);
   status=mysql_query(conn,sql);
   if(status){
-    printf("Error al insertar los datos de la red\n");
+    perror("Error al insertar los datos de la red ");
+    exit(1);
   }
   closeConnection();
 }

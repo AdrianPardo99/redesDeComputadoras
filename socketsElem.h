@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 21/02/2019
+  Fecha de modificación: 03/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -145,7 +145,8 @@ int isBroadcastMac(datos *trama){
   return !(memcmp(trama+0,macBroadcast+0,6));
 }
 
-/*Función que converte una cadena de caracteres al valor hexadecimal que necesita la IP*/
+/*Función que converte una cadena de caracteres al valor hexadecimal
+  que necesita la IP*/
 void charToIPHex(char *cad){
   struct in_addr addr;
   int i,j,k=0,n=0,ipC;
