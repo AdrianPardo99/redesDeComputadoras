@@ -1,17 +1,20 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 21/02/2019
+  Fecha de modificación: 06/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
+
 #include "socketsElem.h"
 #include "colors.h"
 #include "initSockets.h"
 #include "hardwareInfo.h"
 #include "getSend.h"
+#include "arpStruct.h"
 #include "sqlLib.h"
 #include "timer.h"
+#include "freeARP.h"
 #include "arpFile.h"
 
 /*Función que envia mensajes*/

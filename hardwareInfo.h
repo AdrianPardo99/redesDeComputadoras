@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 21/02/2019
+  Fecha de modificación: 03/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -101,8 +101,8 @@ void obtenerDatosHardwareOrigen(socketRaw ds){
 /*Función que obtiene el indice del hardware de red*/
 socketRaw obtenerDatosIndex(socketRaw ds){
   printf("Inserta el nombre de la interfaz de red: ");
-  fflush(stdin);
   cpHardware=(char*)malloc(sizeof(char)*(IFNAMSIZ));
+  fflush(stdin);
   fgets(cpHardware,IFNAMSIZ,stdin);
   *(cpHardware+sizeChar(cpHardware))='\0';
   strcpy(nic.ifr_name+0,cpHardware+0);

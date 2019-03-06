@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 03/03/2019
+  Fecha de modificación: 06/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -14,6 +14,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "apiSocket.h"
+#include "libErrorApiSocket.h"
 int main(int argc,char **argv){
   if(argc>1){
     if(argc>2){
@@ -37,13 +38,11 @@ int main(int argc,char **argv){
         initConnection();
         closeConnection();
         initScanARP(1);
+        free(database);
+        free(password);
+        free(user);
       }else{
-        printf("%sError por favor ingresa alguna de las siguientes opciones\n"
-          "%sarp -> genera una petición ARP enviada a traves de la red\n"
-          "%sarpScanner -> genera varias peticiones ARP y escanea toda"
-          " red de trabajo\n%sarpScanner sql -> al igual que arpScanner pero"
-          " conectado a una BD\n%sinterfaces -> Muestra las interfaces de red"
-          " así como su contenido\n%s",KRED,KGRN,KYEL,KCYN,KBLU,KNRM);
+        printErrorParams();
       }
     }else{
       if(!memcmp("arp",argv[1],3)&&(sizeChar(argv[1])+1)==3){
@@ -53,22 +52,13 @@ int main(int argc,char **argv){
       }else if(!memcmp("interfaces",argv[1],10)){
         showInterface();
       }else{
-        printf("%sError por favor ingresa alguna de las siguientes opciones\n"
-          "%sarp -> genera una petición ARP enviada a traves de la red\n"
-          "%sarpScanner -> genera varias peticiones ARP y escanea toda"
-          " red de trabajo\n%sarpScanner sql -> al igual que arpScanner pero"
-          " conectado a una BD\n%sinterfaces -> Muestra las interfaces de red"
-          " así como su contenido\n%s",KRED,KGRN,KYEL,KCYN,KBLU,KNRM);
+        printErrorParams();
       }
     }
   }else{
-    printf("%sError por favor ingresa alguna de las siguientes opciones\n"
-      "%sarp -> genera una petición ARP enviada a traves de la red\n"
-      "%sarpScanner -> genera varias peticiones ARP y escanea toda"
-      " red de trabajo\n%sarpScanner sql -> al igual que arpScanner pero"
-      " conectado a una BD\n%sinterfaces -> Muestra las interfaces de red"
-      " así como su contenido\n%s",KRED,KGRN,KYEL,KCYN,KBLU,KNRM);
+    printErrorParams();
   }
+  /*getSQLStruct();*/
   return 0;
   /*Valores de FLAGS
   IFF_UP=1

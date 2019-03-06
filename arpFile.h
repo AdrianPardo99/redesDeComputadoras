@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 03/03/2019
+  Fecha de modificación: 06/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -155,7 +155,6 @@ void estructuraTramaARPTwo(datos *trama){
     memcpy(trama+20,ARPAns+0,2);
   }else{
     memcpy(trama+20,ARPAnsI+0,2);
-
   }
 }
 
@@ -217,6 +216,7 @@ void initScanARP(int des){
       }
     }
     printf("\n");
+
     if(des){
       nameSSID=(char *)malloc(sizeof(char)*200);
       printf("Ingresa un nombre para clasificar la red en la Base de datos: ");
@@ -258,4 +258,7 @@ void initScanARP(int des){
   }else{
     printf("Error al abrir la aplicación en la función initScanARP\n");
   }
+  free(nameSSID);
+  free(red);
+  free(sub);
 }
