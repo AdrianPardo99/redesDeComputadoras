@@ -66,8 +66,6 @@ void freeStruct(ARPStruct arp){
     freeStruct(nextHost(arp));
     free(arp);
     free(arp->sig);
-  }else{
-    printf("Limpieza correcta\n");
   }
 }
 

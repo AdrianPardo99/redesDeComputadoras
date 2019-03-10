@@ -16,6 +16,7 @@
 #include "timer.h"
 #include "freeARP.h"
 #include "arpFile.h"
+#include "freeARPInfractor.h"
 
 /*Función que envia mensajes*/
 void estructuraMensaje(datos *trama,datos *message){

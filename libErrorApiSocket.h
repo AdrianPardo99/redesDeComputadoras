@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 06/03/2019
+  Fecha de modificación: 10/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -13,5 +13,8 @@ void printErrorParams(){
     "%sarpScanner -> genera varias peticiones ARP y escanea toda"
     " red de trabajo\n%sarpScanner sql -> al igual que arpScanner pero"
     " conectado a una BD\n%sinterfaces -> Muestra las interfaces de red"
-    " así como su contenido\n%s",KRED,KGRN,KYEL,KCYN,KBLU,KNRM);
+    " así como su contenido\n%s"
+    "serverARPFree -> Inicializa un servidor ARP Gratuito\n%s"
+    "infractorARP -> Envia una trama infractoria de ARP Gratuito%s\n",
+    KRED,KGRN,KYEL,KCYN,KBLU,KGRN,BCYN,KNRM);
 }

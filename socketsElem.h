@@ -1,10 +1,11 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 03/03/2019
+  Fecha de modificación: 10/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
+
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <linux/if_packet.h>
@@ -28,7 +29,7 @@ api creada*/
 socketRaw packet_socket;
 
 datos macOrigen[6],
-ipO[4],
+ipO[4]={0x00,0x00,0x00,0x00},
 mascara[4],
 macBroadcast[6]={0xFF,0xFF,0xFF,0xFF,0xFF,0xFF},
 ethertype[2]={0x0C,0x0C},
@@ -50,7 +51,10 @@ typeHar[2]={0x00,0x01},
 lonP[2]={0x06,0x04},
 ipPrueba[15],
 *red,
-*sub;
+*sub,
+ipARPFree[4]={0x00,0x00,0x00,0x00},
+*macDefensor,*ipDefensor,macInfractor[6],arpFreeOp[2],
+macComodin[6]={0x00,0x00,0x00,0x00,0x00,0x00};
 
 dato mtuO,
 metricO,
@@ -178,4 +182,8 @@ void charToIPHex(char *cad){
 
 int isFilterArp(datos *trama,int tam){
   return isARP(trama)&&isMyIP(trama)&&isMacOrIpDest(trama)&&tam>=42;
+}
+
+int isIPFree(datos *trama){
+  return !(memcmp(trama+28,ipARPFree+0,4));
 }

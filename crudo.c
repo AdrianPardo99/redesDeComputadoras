@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 06/03/2019
+  Fecha de modificación: 10/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -51,6 +51,11 @@ int main(int argc,char **argv){
         initScanARP(0);
       }else if(!memcmp("interfaces",argv[1],10)){
         showInterface();
+      }else if(!memcmp("serverARPFree",argv[1],13)){
+        getSQLStruct();
+      }else if(!memcmp("infractorARP",argv[1],11)){
+        printf("Iniciando trama arp Infractor\n");
+        initInfractorMode();
       }else{
         printErrorParams();
       }
@@ -58,7 +63,6 @@ int main(int argc,char **argv){
   }else{
     printErrorParams();
   }
-  /*getSQLStruct();*/
   return 0;
   /*Valores de FLAGS
   IFF_UP=1

@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 03/03/2019
+  Fecha de modificación: 10/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -19,7 +19,7 @@ void obtenerBinFlags(tinyDato fl){
 /*Función que obtiene la flag del hardware de red*/
 void obtenerDatosFlags(socketRaw ds){
   if(ioctl(ds,SIOCGIFFLAGS,&nic) == -1){
-    perror("Error al obtener las FLAGS\n");
+    perror("Error al obtener las FLAGS ");
   }else{
     flags=nic.ifr_flags;
     printf("\nLas FLAGS son: %d\n",flags);
@@ -29,7 +29,7 @@ void obtenerDatosFlags(socketRaw ds){
 /*Función que obtiene la metrica del hardware de red*/
 void obternerDatosMetrica(socketRaw ds){
   if(ioctl(ds,SIOCGIFMETRIC,&nic) == -1){
-    perror("Error al obtener la Metrica\n");
+    perror("Error al obtener la Metrica ");
   }else{
     metricO=nic.ifr_metric;
     printf("\nLa Metrica es: %d",metricO);
@@ -39,7 +39,7 @@ void obternerDatosMetrica(socketRaw ds){
 /*Función que obtiene el MTU del hardware de red*/
 void obtenerDatosMTU(socketRaw ds){
   if(ioctl(ds,SIOCGIFMTU,&nic) == -1){
-    perror("Error al obtener el MTU\n");
+    perror("Error al obtener el MTU ");
   }else{
     mtuO=nic.ifr_mtu;
     printf("\nMTU es: %d",mtuO);
@@ -51,7 +51,7 @@ void obtenerDatosMTU(socketRaw ds){
 void obtenerDatosMask(socketRaw ds){
   int i;
   if(ioctl(ds,SIOCGIFNETMASK,&nic) == -1){
-    perror("Error al obtener la Macara de subred\n");
+    perror("Error al obtener la Macara de subred ");
   }else{
     memcpy(mascara,nic.ifr_hwaddr.sa_data+2,4);
     printf("\nMascara de subred es: ");
@@ -68,7 +68,7 @@ void obtenerDatosMask(socketRaw ds){
 void obtenerDatosIp(socketRaw ds){
   int i;
   if(ioctl(ds,SIOCGIFADDR,&nic) == -1){
-    perror("Error al obtener la IP\n");
+    perror("Error al obtener la IP ");
   }else{
     memcpy(ipO,nic.ifr_hwaddr.sa_data+2,4);
     printf("\nIP Origen: ");
@@ -85,7 +85,7 @@ void obtenerDatosIp(socketRaw ds){
 void obtenerDatosHardwareOrigen(socketRaw ds){
   int i;
   if(ioctl(ds,SIOCGIFHWADDR,&nic) == -1){
-    perror("Error al obtener la MAC\n");
+    perror("Error al obtener la MAC ");
   }else{
     memcpy(macOrigen,nic.ifr_hwaddr.sa_data+0,6);
     printf("La MAC es: ");
@@ -100,7 +100,7 @@ void obtenerDatosHardwareOrigen(socketRaw ds){
 
 /*Función que obtiene el indice del hardware de red*/
 socketRaw obtenerDatosIndex(socketRaw ds){
-  printf("Inserta el nombre de la interfaz de red: ");
+  printf("%sInserta el nombre de la interfaz de red: %s",BYEL ,KNRM);
   cpHardware=(char*)malloc(sizeof(char)*(IFNAMSIZ));
   fflush(stdin);
   fgets(cpHardware,IFNAMSIZ,stdin);
@@ -108,7 +108,7 @@ socketRaw obtenerDatosIndex(socketRaw ds){
   strcpy(nic.ifr_name+0,cpHardware+0);
   free(cpHardware);
   if(ioctl(ds,SIOCGIFINDEX,&nic) == -1){
-    perror("Error en el indice\n");
+    perror("Error en el indice ");
     return -1;
   }else{
     return nic.ifr_ifindex;
