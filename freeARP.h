@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 06/03/2019
+  Fecha de modificación: 10/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -17,7 +17,6 @@ ARPStruct initSearchMAC(ARPStruct arp,datos *ma){
     }
     arpCen=nextHost(arpCen);
   }
-  freeStruct(arpCen);
   return NULL;
 }
 
@@ -31,7 +30,6 @@ ARPStruct initSearchIP(ARPStruct arp,datos *IP){
     }
     arpCen=nextHost(arpCen);
   }
-  freeStruct(arpCen);
   return NULL;
 }
 
@@ -70,12 +68,14 @@ void estructuraTramaARPFreeTwo(datos *trama){
 void initListenerARPFree(socketRaw sock, datos *trama,ARPStruct arp){
   int tam;
   ARPStruct arp1,arp2;
+  arp1=arp2=NULL;
   while(1){
     tam=recvfrom(sock,trama,1514,MSG_DONTWAIT,NULL,0);
     if(!isAnError(tam)){
       if(isBroadcastMac(trama)&&isARP(trama)&&isIPFree(trama)){
-        arp1=initSearchMAC(arp,trama+6),
-        printf("Trama recibida\n");
+        arp1=initSearchMAC(arp,trama+6);
+        printf("%sTrama recibida\n%sIP Destino: %d.%d.%d.%d%s\n",
+          BBLU,BMAG,*(trama+38),*(trama+39),*(trama+40),*(trama+41),KNRM);
         imprimeTramaARP(trama,tam);
         if(isEmpty(arp1)){
           arp2=initSearchIP(arp,trama+38);
@@ -98,10 +98,33 @@ void initListenerARPFree(socketRaw sock, datos *trama,ARPStruct arp){
             enviaTrama(packet_socket,tramaEnv,indice);
             imprimeTramaARP(tramaEnv,60);
           }
-          printf("\n\n");
         }else{
-          printf("%sMisma MAC sin ningun problema%s\n",KYEL,KNRM);
+          printf("%sMisma MAC en la base de datos%s\n",KYEL,KNRM);
+          if(memcmp(trama+38,getIP(arp1),6)){
+            arp2=initSearchIP(arp,trama+38);
+            if(isEmpty(arp2)){
+              printf("%sIP Not Match: No hay nada que hacer%s\n",KRED,KNRM);
+            }else{
+              printf("%sEstructurando defensa%s\n",KGRN,KNRM);
+              macDefensor=getMAC(arp2);
+              ipDefensor=getIP(arp2);
+              *arpFreeOp=0x00;
+              *(arpFreeOp+1)=0x02;
+              memcpy(macInfractor+0,trama+6,6);
+              estructuraTramaARPFree(tramaEnv);
+              enviaTrama(packet_socket,tramaEnv,indice);
+              imprimeTramaARP(tramaEnv,60);
+              printf("%sEnviando solicitud ARP Gratuito%s\n",BYEL,KNRM);
+              *arpFreeOp=0x00;
+              *(arpFreeOp+1)=0x01;
+              estructuraTramaARPFreeTwo(tramaEnv);
+              enviaTrama(packet_socket,tramaEnv,indice);
+              imprimeTramaARP(tramaEnv,60);
+            }
+          }
         }
+        arp1=arp2=NULL;
+        printf("\n\n");
       }
     }
   }
@@ -114,7 +137,7 @@ void initServerARPFree(ARPStruct arp){
   if(!isAnError(packet_socket)){
     obtainHardwareData();
     if(!memcmp(ipO+0,ipARPFree+0,4)){exit(1);}
-    printf("Server iniciado\n");
+    printf("%sServer iniciado%s\n",BYEL,KNRM);
     initListenerARPFree(packet_socket,tramaGet,arp);
     closeSocket();
   }else{

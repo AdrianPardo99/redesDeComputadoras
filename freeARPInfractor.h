@@ -15,18 +15,20 @@ void initInfractorMode(){
     int i;
     *(opARP)=0x00;
     *(opARP+1)=0x01;
-    printf("Ingresa la ip del destino: ");
-    scanf("%s",ipPrueba);
-    charToIPHex(ipPrueba);
-    for(i=0;i!=6;i++){
-      *(macD+i)=0x00;
+    while(1){
+      printf("Ingresa la ip del destino: ");
+      scanf("%s",ipPrueba);
+      charToIPHex(ipPrueba);
+      for(i=0;i!=6;i++){
+        *(macD+i)=0x00;
+      }
+      for(i=0;i!=4;i++){
+        *(ipO+i)=0;
+      }
+      estructuraARP(tramaEnv);
+      enviaTrama(packet_socket,tramaEnv,indice);
+      imprimeTramaARP(tramaEnv,60);
     }
-    for(i=0;i!=4;i++){
-      *(ipO+i)=0;
-    }
-    estructuraARP(tramaEnv);
-    enviaTrama(packet_socket,tramaEnv,indice);
-    imprimeTramaARP(tramaEnv,60);
     closeSocket();
   }else{
     printf("Error al abrir la aplicación en la función initInfractorMode\n");
