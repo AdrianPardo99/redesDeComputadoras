@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 10/03/2019
+  Fecha de modificación: 07/04/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -180,10 +180,18 @@ void charToIPHex(char *cad){
   *(ipD+n)=ipC;
 }
 
+/*Funcion que analiza si los datos que recibe son del protocolo ARP*/
 int isFilterArp(datos *trama,int tam){
   return isARP(trama)&&isMyIP(trama)&&isMacOrIpDest(trama)&&tam>=42;
 }
 
+/*Funcion que analiza si los datos que recibe son de una solicitud arp
+  gratuito*/
 int isIPFree(datos *trama){
   return !(memcmp(trama+28,ipARPFree+0,4));
+}
+
+/*Funcion que limpia la pantalla*/
+void clearScreen(){
+  printf("\e[2J\e[H");
 }

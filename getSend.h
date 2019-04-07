@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 03/03/2019
+  Fecha de modificación: 07/04/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -14,7 +14,30 @@ void printMessage(datos *trama){
 
 /*Función que permite cambiar el color del buffer de salida (stdout)*/
 void setColor(int i,int des){
-  if(des==1){
+  if(des==2){
+    switch (i) {
+      case 0:case 1:case 2:case 3:case 4:case 5:
+        printf("%s",KGRN);
+        break;
+      case 6:case 7:case 8:case 9:case 10:case 11:
+        printf("%s",KYEL);
+        break;
+      case 12:case 13:
+        printf("%s",KBLU);
+        break;
+      case 14:
+        printf("%s",BRED);
+        break;
+      case 15:
+        printf("%s",BYEL);
+        break;
+      case 16:case 17:
+        printf("%s",KRED);
+        break;
+      default:
+        printf("%s",KNRM);
+    }
+  }else if(des==1){
     switch(i){
       case 0:case 1:case 2:case 3:case 4:case 5:
         printf("%s",KGRN);
@@ -53,6 +76,15 @@ void setColor(int i,int des){
         break;
       }
   }
+}
+
+void imprimeTramaLLC(datos *trama,int tam){
+  int i;
+  for(i=0;i!=tam;i++){
+    setColor(i,2);
+    printf("%.2X%s",trama[i],(((i+1)%16==0)?("\n"):(" ")));
+  }
+  printf("\n");
 }
 
 /*Función que imprime trama de ARP*/

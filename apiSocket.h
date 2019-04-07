@@ -17,6 +17,7 @@
 #include "freeARP.h"
 #include "arpFile.h"
 #include "freeARPInfractor.h"
+#include "fileLLC.h"
 
 /*Función que envia mensajes*/
 void estructuraMensaje(datos *trama,datos *message){

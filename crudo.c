@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 10/03/2019
+  Fecha de modificación: 07/04/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -16,6 +16,10 @@
 #include "apiSocket.h"
 #include "libErrorApiSocket.h"
 int main(int argc,char **argv){
+  if(geteuid()!=0){
+      printf("%sDebe ser ejecutado con privilegios root%s\n",BRED,KNRM);
+      exit(1);
+    }
   if(argc>1){
     if(argc>2){
       if(!memcmp("arpScanner",argv[1],10)&&!memcmp("sql",argv[2],3)){
@@ -41,6 +45,9 @@ int main(int argc,char **argv){
         free(database);
         free(password);
         free(user);
+      }else if(!memcmp("llcFile",argv[1],7)){
+        printf("Iniciando analizador LLC en archivo\n");
+        initFileLLC(argv[2]);
       }else{
         printErrorParams();
       }
@@ -56,6 +63,9 @@ int main(int argc,char **argv){
       }else if(!memcmp("infractorARP",argv[1],11)){
         printf("Iniciando trama arp Infractor\n");
         initInfractorMode();
+      }else if(!memcmp("llcScanner",argv[1],10)){
+        printf("Iniciando analizador LLC\n");
+        initLLC();
       }else{
         printErrorParams();
       }

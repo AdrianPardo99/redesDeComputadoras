@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 10/03/2019
+  Fecha de modificación: 07/04/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -15,6 +15,8 @@ void printErrorParams(){
     " conectado a una BD\n%sinterfaces -> Muestra las interfaces de red"
     " así como su contenido\n%s"
     "serverARPFree -> Inicializa un servidor ARP Gratuito\n%s"
-    "infractorARP -> Envia una trama infractoria de ARP Gratuito%s\n",
-    KRED,KGRN,KYEL,KCYN,KBLU,KGRN,BCYN,KNRM);
+    "infractorARP -> Envia una trama infractoria de ARP Gratuito\n%s"
+    "llcFile -> Inicia un analizador de tramas LLC apartir de un archivo\n%s"
+    "llcScanner -> Inicia un analizador LLC apartir de la interfaz de red\n%s",
+    KRED,KGRN,KYEL,KCYN,KBLU,KGRN,BCYN,BRED,BBLU,KNRM);
 }
