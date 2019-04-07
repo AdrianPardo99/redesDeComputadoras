@@ -114,33 +114,33 @@ void analiceLCC(datos *trama){
     printf("POLL/FINAL: %d ",(trama[16]&0x10)>>4);
     if(((trama[16]&0x10)>>4)==1){
       if((trama[15]&0x01)==1){
-        printf("FINAL Requiere respuesta inmediata\n");
-        printf("\n\tNombre\t\t\t    Descripcion\t\t\tInformacion\n");
+        printf("FINAL Requiere respuesta inmediata\n"
+          "\n\tNombre\t\t\t    Descripcion\t\t\tInformacion\n");
         switch((trama[16]&0xEC)){
           case 0x60:
-            printf("|Unnumbered Acknowledgment UA|\t");
-            printf("|Reconoce la conexion|\t");
-            printf("|De uno de los comandos de modo de configuracion|\t");
+            printf("|Unnumbered Acknowledgment UA|\t"
+              "|Reconoce la conexion|\t"
+              "|De uno de los comandos de modo de configuracion|\t");
           break;
           case 0x0C:
-            printf("|Disconnect Mode DM|\t");
-            printf("|Responder en modo de desconexión|\t");
-            printf("|Modo de configuración requerido|\t");
+            printf("|Disconnect Mode DM|\t"
+              "|Responder en modo de desconexión|\t"
+              "|Modo de configuración requerido|\t");
           break;
           case 0x40:
-            printf("|Request Disconnect RD|\t");
-            printf("|Solicitud por el comando DISC|\t");
-            printf("\t");
+            printf("|Request Disconnect RD|\t"
+              "|Solicitud por el comando DISC|\t"
+              "\t");
           break;
           case 0x04:
-            printf("|Request Inialization Mode RIM|\t");
-            printf("|Inicialización necesaria| \t");
-            printf("|Solicitud de comando SIM|\t");
+            printf("|Request Inialization Mode RIM|\t"
+              "|Inicialización necesaria| \t"
+              "|Solicitud de comando SIM|\t");
           break;
           case 0x84:
-            printf("|Frame Reject FRMR|\t");
-            printf("|Informe de Recepción|\t");
-            printf("|De trama inaceptable|\t");
+            printf("|Frame Reject FRMR|\t"
+              "|Informe de Recepción|\t"
+              "|De trama inaceptable|\t");
           break;
           default:
             printf("MMM MM INCORRECTO");
@@ -148,58 +148,58 @@ void analiceLCC(datos *trama){
         }
       }
     }else{
-        printf("PULL Requiere respuesta inmediata\n");
-        printf("\n\tNombre\t\t\t    Descripcion\t\t\tInformacion\n");
+        printf("PULL Requiere respuesta inmediata\n"
+          "\n\tNombre\t\t\t    Descripcion\t\t\tInformacion\n");
         switch((trama[16]&0xEC)){
           case 0x80:
-            printf("|Set normal response SNRM|\t");
-            printf("|Modo de Configuracion|\t");
-            printf("|Usa 3 bits para números de secuencia|\t");
+            printf("|Set normal response SNRM|\t"
+              "|Modo de Configuracion|\t"
+              "|Usa 3 bits para números de secuencia|\t");
           break;
           case 0xCC:
-            printf("|Set normal response extended mode SNRME|\t");
-            printf("|Modo de Configuracion Extendido|\t");
-            printf("|Usa 7 bits para números de secuencia|\t");
+            printf("|Set normal response extended mode SNRME|\t"
+              "|Modo de Configuracion Extendido|\t"
+              "|Usa 7 bits para números de secuencia|\t");
           break;
           case 0x0C:
-            printf("|Set asynchronous response SARM|\t");
-            printf("|Modo de Configuracion Asincrono|\t");
-            printf("|Usa 3 bits para números de secuencia|\t");
+            printf("|Set asynchronous response SARM|\t"
+              "|Modo de Configuracion Asincrono|\t"
+              "|Usa 3 bits para números de secuencia|\t");
           break;
           case 0x4C:
-            printf("|Set asynchronous response extended mode SARME|\t");
-            printf("|Modo de Configuracion Asincrono Extendido|\t");
-            printf("|Usa 7 bits para números de secuencia|\t");
+            printf("|Set asynchronous response extended mode SARME|\t"
+              "|Modo de Configuracion Asincrono Extendido|\t"
+              "|Usa 7 bits para números de secuencia|\t");
           break;
           case 0x2C:
-            printf("|Set asynchronous balanced mode SABM|\t");
-            printf("|Modo de Configuracion Asincrono Balanceadp|\t");
-            printf("|Usa 3 bits para números de secuencia|\t");
+            printf("|Set asynchronous balanced mode SABM|\t"
+              "|Modo de Configuracion Asincrono Balanceadp|\t"
+              "|Usa 3 bits para números de secuencia|\t");
           break;
           case 0x6C:
-            printf("|Set asynchronous balanced extended mode SABME|\t");
-            printf("|Modo de Configuracion Asincrono Balanceado Extendido|\t");
-            printf("|Usa 7 bits para números de secuencia|\t");
+            printf("|Set asynchronous balanced extended mode SABME|\t"
+              "|Modo de Configuracion Asincrono Balanceado Extendido|\t"
+              "|Usa 7 bits para números de secuencia|\t");
           break;
           case 0x04:
-            printf("|Set inicialitation mode SIM|\t");
-            printf("|Iniciar funcion de control de enlace|\t");
-            printf("|Dirigido a la estacion|\t");
+            printf("|Set inicialitation mode SIM|\t"
+              "|Iniciar funcion de control de enlace|\t"
+              "|Dirigido a la estacion|\t");
           break;
           case 0x40:
-            printf("|Disconnect DISC|\t");
-            printf("|Terminar la conexion de enlace lógico|\t");
-            printf("|Para futuras tramas de I y S regresa DM|\t");
+            printf("|Disconnect DISC|\t"
+              "|Terminar la conexion de enlace lógico|\t"
+              "|Para futuras tramas de I y S regresa DM|\t");
           break;
           case 0x20:
-            printf("|Unnumbered Poll UP|\t");
-            printf("|Se utiliza para solicitar|\t");
-            printf("|Información de control|\t");
+            printf("|Unnumbered Poll UP|\t"
+              "|Se utiliza para solicitar|\t"
+              "|Información de control|\t");
           break;
           case 0x8C:
-            printf("|Reset RSET|\t");
-            printf("|Utilizado para la recuperación|\t");
-            printf("|Reestablece N(R), pero no N(S)|\t");
+            printf("|Reset RSET|\t"
+              "|Utilizado para la recuperación|\t"
+              "|Reestablece N(R), pero no N(S)|\t");
           break;
           default:
             printf("MMM MM INCORRECTO");
@@ -207,23 +207,23 @@ void analiceLCC(datos *trama){
         }
     }
   }else{
-    printf("P/F Trama de informacion\n");
-    printf("\n\tNombre\t\t\t    Descripcion\t\t\tInformacion\n");
+    printf("P/F Trama de informacion\n"
+      "\n\tNombre\t\t\t    Descripcion\t\t\tInformacion\n");
     switch((trama[16]&0xEC)){
       case 0x00:
-        printf("|Unnumbered Information UI|\t");
-        printf("|Datos no reconocidos|\t");
-        printf("|Tiene una carga util|\t");
+        printf("|Unnumbered Information UI|\t"
+          "|Datos no reconocidos|\t"
+          "|Tiene una carga util|\t");
       break;
       case 0xAC:
-        printf("|Exchange Identification XID|\t");
-        printf("|Se utiliza para solicitar|\t");
-        printf("|Información de control|\t");
+        printf("|Exchange Identification XID|\t"
+          "|Se utiliza para solicitar|\t"
+          "|Información de control|\t");
       break;
       case 0xE0:
-        printf("|Test TEST|\t");
-        printf("|Intercambio de información idéntica|\t");
-        printf("|Campos para la realización de pruebas|\t");
+        printf("|Test TEST|\t"
+          "|Intercambio de información idéntica|\t"
+          "|Campos para la realización de pruebas|\t");
       break;
       default:
         printf("MMM MM INCORRECTO");
@@ -257,6 +257,9 @@ void initLLC(){
   if(!isAnError(packet_socket)){
     obtainHardwareData();
     if(isAnError(indice)){exit(1);}
+    printf("%sPor favor preciona enter para continuar...%s",BGRN,KNRM);
+    getchar();
+    printf("%sInit scanner LLC%s\n",BBLU,KNRM);
     recibeLLC(packet_socket,tramaGet);
     closeSocket();
   }else{
