@@ -270,13 +270,13 @@ void initLLC(){
 
 /*Funcion inicializa el analizador LLC apartir de un archivo de texto*/
 void initFileLLC(char *nameFile){
-  clearScreen();
   FILE *fl;
   fl=fopen(nameFile,"r");
   if(fl==NULL){
     perror("Error al leer archivo: ");
     exit(1);
   }
+  clearScreen();
   datos buffer[500],*trama;
   char hexbyte[3];
   int linea=1,val=0,i;
