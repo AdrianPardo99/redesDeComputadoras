@@ -1,0 +1,851 @@
+Iniciando analizador LLC en archivo
+	[91mTrama LLC 1	[94m   Tamaño de trama: 60[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m2F [91mF0 [93mF0
+[31m03 [0m2C [0m00 [0mFF [0mEF [0m0E [0m17 [0m85 [0m00 [0m4F [0m00 [0m85 [0m00 [0m4D [0m34 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m00 [0m4D [0m38 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 47
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama no numerada
+[33mNormal/Extendida
+POLL/FINAL: 0 PULL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 2	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m03 [91mF0 [93mF0
+[31m7F [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 3
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama no numerada
+[33mNormal/Extendida
+POLL/FINAL: 1 
+[0m	[91mTrama LLC 3	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m03 [91mF0 [93mF1
+[31m73 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 3
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama no numerada
+[33mNormal/Extendida
+POLL/FINAL: 1 FINAL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Acknowledgment UA|	|Reconoce la conexion|	|De uno de los comandos de modo de configuracion|	
+[0m	[91mTrama LLC 4	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m01 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 5	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m01 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 6	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m12 [91mF0 [93mF0
+[31m00 [0m01 [0m0E [0m00 [0mFF [0mEF [0m19 [0m8F [0mBC [0m05 [0m85 [0m00 [0m4F [0m00 [0m85 [0m4F
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 18
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 0
+Número de secuencia que se espera recibir: 0
+POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 7	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m12 [91mF0 [93mF0
+[31m00 [0m03 [0m0E [0m00 [0mFF [0mEF [0m17 [0m81 [0mBC [0m05 [0m4F [0m00 [0m85 [0m00 [0m4F [0m85
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 18
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 0
+Número de secuencia que se espera recibir: 1
+POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 8	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m03 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 1
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 9	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m05 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 10	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m03 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 1
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 11	[94m   Tamaño de trama: 108[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m5F [91mF0 [93mF0
+[31m02 [0m04 [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m4F [0m85
+[0mFF [0m53 [0m4D [0m42 [0m72 [0m00 [0m00 [0m00 [0m00 [0m80 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0mC1 [0m1D [0m00 [0m00 [0m04 [0m2D
+[0m11 [0m05 [0m00 [0m02 [0m02 [0m00 [0m01 [0m00 [0m68 [0m0B [0m00 [0m00 [0m00 [0m00 [0m01 [0m00
+[0m85 [0m00 [0m01 [0m80 [0m03 [0m02 [0m00 [0m00 [0m00 [0m63 [0mBE [0m4F [0m3D [0m66 [0mC1 [0m01
+[0m68 [0m01 [0m08 [0m08 [0m00 [0m85 [0m00 [0m01 [0m80 [0m9F [0mFE [0mE6 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 95
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 1
+Número de secuencia que se espera recibir: 2
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 12	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m04 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 13	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m05 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 14	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m05 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 15	[94m   Tamaño de trama: 147[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m86 [91mF0 [93mF0
+[31m04 [0m04 [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m85 [0m4F
+[0mFF [0m53 [0m4D [0m42 [0m73 [0m00 [0m00 [0m00 [0m00 [0m10 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0mC1 [0m1D [0m00 [0m00 [0m04 [0m2D
+[0m0D [0m75 [0m00 [0m59 [0m00 [0m68 [0m0B [0m02 [0m00 [0m00 [0m00 [0m85 [0m00 [0m01 [0m80 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m01 [0m00 [0m00 [0m00 [0m1C [0m00 [0m00 [0m00 [0m58
+[0m00 [0m57 [0m69 [0m6E [0m64 [0m6F [0m77 [0m73 [0m20 [0m34 [0m2E [0m30 [0m00 [0m57 [0m69 [0m6E
+[0m64 [0m6F [0m77 [0m73 [0m20 [0m34 [0m2E [0m30 [0m00 [0m04 [0mFF [0m00 [0m00 [0m00 [0m00 [0m00
+[0m02 [0m00 [0m10 [0m00 [0m20 [0m00 [0m5C [0m5C [0m4D [0m38 [0m5C [0m49 [0m50 [0m43 [0m24 [0m00
+[0m49 [0m50 [0m43 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 134
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 2
+Número de secuencia que se espera recibir: 2
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 16	[94m   Tamaño de trama: 83[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m46 [91mF0 [93mF0
+[31m04 [0m06 [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m4F [0m85
+[0mFF [0m53 [0m4D [0m42 [0m73 [0m00 [0m00 [0m00 [0m00 [0m90 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m06 [0mE0 [0mC1 [0m1D [0m00 [0m00 [0m04 [0m2D
+[0m03 [0m75 [0m00 [0m29 [0m00 [0m00 [0m00 [0m00 [0m00 [0m02 [0mFF [0m00 [0m00 [0m00 [0m04 [0m00
+[0m49 [0m50 [0m43 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 70
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 2
+Número de secuencia que se espera recibir: 3
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 17	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m07 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 18	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m07 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 19	[94m   Tamaño de trama: 133[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m78 [91mF0 [93mF0
+[31m06 [0m06 [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m85 [0m4F
+[0mFF [0m53 [0m4D [0m42 [0m25 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m06 [0mE0 [0mC1 [0m1D [0m00 [0m00 [0m04 [0m2E
+[0m0E [0m1A [0m00 [0m00 [0m00 [0m08 [0m00 [0m00 [0m10 [0m00 [0m00 [0m00 [0m00 [0m88 [0m13 [0m00
+[0m00 [0m00 [0m00 [0m1A [0m00 [0m4C [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m27 [0m00 [0m5C
+[0m50 [0m49 [0m50 [0m45 [0m5C [0m4C [0m41 [0m4E [0m4D [0m41 [0m4E [0m00 [0m68 [0m00 [0m57 [0m72
+[0m4C [0m65 [0m68 [0m44 [0m4F [0m00 [0m42 [0m31 [0m36 [0m42 [0m42 [0m44 [0m7A [0m00 [0m01 [0m00
+[0m00 [0m10 [0m02 [0m22 [0m00 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 120
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 3
+Número de secuencia que se espera recibir: 3
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 20	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m08 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 4
+Receiver ready (RR)POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 21	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m09 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 4
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 22	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m07 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 23	[94m   Tamaño de trama: 203[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34mBE [91mF0 [93mF0
+[31m06 [0m08 [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m4F [0m85
+[0mFF [0m53 [0m4D [0m42 [0m25 [0m00 [0m00 [0m00 [0m00 [0m80 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m06 [0mE0 [0mC1 [0m1D [0m00 [0m00 [0m04 [0m2E
+[0m0A [0m08 [0m00 [0m6C [0m00 [0m00 [0m00 [0m08 [0m00 [0m37 [0m00 [0m00 [0m00 [0m6C [0m00 [0m40
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m75 [0m00 [0m00 [0m00 [0m94 [0m1F [0m04 [0m00 [0m04 [0m00 [0m5C
+[0m4D [0m33 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m04 [0m00 [0m03 [0m20 [0m40 [0m40 [0mFF [0m1F [0mF9 [0mC0 [0m4D [0m34 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m04 [0m00 [0m03 [0m20 [0m40 [0m40
+[0mFE [0m1F [0mF9 [0mC0 [0m4D [0m36 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m04 [0m00 [0m03 [0m20 [0m40 [0m40 [0mFD [0m1F [0mF9 [0mC0 [0m4D [0m38
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m04 [0m00
+[0m03 [0m20 [0m45 [0m40 [0mFC [0m1F [0mF9 [0mC0 [0m00 [0m00 [0m00 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 190
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 3
+Número de secuencia que se espera recibir: 4
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 24	[94m   Tamaño de trama: 133[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m78 [91mF0 [93mF0
+[31m08 [0m08 [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m85 [0m4F
+[0mFF [0m53 [0m4D [0m42 [0m25 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m06 [0mE0 [0mC1 [0m1D [0m00 [0m00 [0m01 [0m2A
+[0m0E [0m1A [0m00 [0m00 [0m00 [0m08 [0m00 [0m00 [0m10 [0m00 [0m00 [0m00 [0m00 [0m88 [0m13 [0m00
+[0m00 [0m00 [0m00 [0m1A [0m00 [0m4C [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m27 [0m00 [0m5C
+[0m50 [0m49 [0m50 [0m45 [0m5C [0m4C [0m41 [0m4E [0m4D [0m41 [0m4E [0m00 [0m68 [0m00 [0m57 [0m72
+[0m4C [0m65 [0m68 [0m44 [0m4F [0m00 [0m42 [0m31 [0m36 [0m42 [0m42 [0m44 [0m7A [0m00 [0m01 [0m00
+[0m00 [0m10 [0m02 [0m22 [0m00 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 120
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 4
+Número de secuencia que se espera recibir: 4
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 25	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m0A [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 26	[94m   Tamaño de trama: 203[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34mBE [91mF0 [93mF0
+[31m08 [0m0A [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m4F [0m85
+[0mFF [0m53 [0m4D [0m42 [0m25 [0m00 [0m00 [0m00 [0m00 [0m80 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m06 [0mE0 [0mC1 [0m1D [0m00 [0m00 [0m01 [0m2A
+[0m0A [0m08 [0m00 [0m6C [0m00 [0m00 [0m00 [0m08 [0m00 [0m37 [0m00 [0m00 [0m00 [0m6C [0m00 [0m40
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m75 [0m00 [0m00 [0m00 [0m94 [0mBF [0m04 [0m00 [0m04 [0m00 [0m5C
+[0m4D [0m33 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m04 [0m00 [0m03 [0m20 [0m40 [0m40 [0mFF [0mBF [0m29 [0mC8 [0m4D [0m34 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m04 [0m00 [0m03 [0m20 [0m40 [0m40
+[0mFE [0mBF [0m29 [0mC8 [0m4D [0m36 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m04 [0m00 [0m03 [0m20 [0m40 [0m40 [0mFD [0mBF [0m29 [0mC8 [0m4D [0m38
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m04 [0m00
+[0m03 [0m20 [0m45 [0m40 [0mFC [0mBF [0m29 [0mC8 [0m00 [0m00 [0m00 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 190
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 4
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 27	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m12 [91mF0 [93mF0
+[31m0A [0m0B [0m0E [0m00 [0mFF [0mEF [0m14 [0m00 [0m00 [0m00 [0m28 [0m00 [0m00 [0m00 [0m85 [0m4F
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 18
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 5
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 28	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m0D [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 29	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m0B [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 30	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m0D [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 31	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m0B [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 32	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m0D [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 33	[94m   Tamaño de trama: 66[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m35 [91mF0 [93mF0
+[31m0C [0m0A [0m0E [0m00 [0mFF [0mEF [0m16 [0m04 [0m00 [0m00 [0m00 [0m00 [0m28 [0m00 [0m85 [0m4F
+[0mFF [0m53 [0m4D [0m42 [0m71 [0m00 [0m00 [0m00 [0m00 [0m00 [0m01 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m06 [0mE0 [0m00 [0m00 [0m00 [0m00 [0m82 [0m07
+[0m00 [0m00 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 53
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 6
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 34	[94m   Tamaño de trama: 66[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m35 [91mF0 [93mF0
+[31m0A [0m0E [0m0E [0m00 [0mFF [0mEF [0m16 [0m0C [0m00 [0m00 [0m28 [0m00 [0m28 [0m00 [0m4F [0m85
+[0mFF [0m53 [0m4D [0m42 [0m71 [0m00 [0m00 [0m00 [0m00 [0m80 [0m01 [0m00 [0m00 [0m00 [0m00 [0m00
+[0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m06 [0mE0 [0m00 [0m00 [0m00 [0m00 [0m82 [0m07
+[0m00 [0m00 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 53
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 5
+Número de secuencia que se espera recibir: 7
+POLL/FINAL: 0 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 35	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m0D [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 36	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m0F [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 7
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 37	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m0F [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 7
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 38	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m0D [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 39	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m12 [91mF0 [93mF0
+[31m0E [0m0D [0m0E [0m00 [0mFF [0mEF [0m14 [0m00 [0m00 [0m00 [0m28 [0m00 [0m00 [0m00 [0m85 [0m4F
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 18
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 7
+Número de secuencia que se espera recibir: 6
+POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+MMM MM INCORRECTO
+[0m	[91mTrama LLC 40	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m04 [91mF0 [93mF0
+[31m01 [0m0D [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 41	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m11 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 8
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 42	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m12 [91mF0 [93mF0
+[31m10 [0m0D [0m0E [0m00 [0mFF [0mEF [0m18 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m00 [0m85 [0m4F
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 18
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama de información
+[33mExtendida
+Número de secuencia de envio: 8
+Número de secuencia que se espera recibir: 6
+POLL/FINAL: 1 PULL Requiere respuesta inmediata
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 43	[94m   Tamaño de trama: 59[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m04 [91mF0 [93mF1
+[31m01 [0m13 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 4
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama de supervisión
+[33mExtendida
+Número de secuencia que se espera recibir: 9
+Receiver ready (RR)POLL/FINAL: 1 P/F Trama de informacion
+P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+[0m	[91mTrama LLC 44	[94m   Tamaño de trama: 59[0m
+[32m00 [32m20 [32m18 [32m66 [32mC6 [32m02 [33m00 [33m00 [33mE8 [33m15 [33mBB [33m75 [34m00 [34m03 [91mF0 [93mF0
+[31m53 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:20:18:66:c6:02
+[33mMAC Origen: 00:00:e8:15:bb:75
+[34mLongitud: 3
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de comando		Protocolo: NETBIOS
+[31mControl: Trama no numerada
+[33mNormal/Extendida
+POLL/FINAL: 1 
+[0m	[91mTrama LLC 45	[94m   Tamaño de trama: 60[0m
+[32m00 [32m00 [32mE8 [32m15 [32mBB [32m75 [33m00 [33m20 [33m18 [33m66 [33mC6 [33m02 [34m00 [34m03 [91mF0 [93mF1
+[31m73 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20
+[0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 [0m20 
+[32mMAC Destino: 00:00:e8:15:bb:75
+[33mMAC Origen: 00:20:18:66:c6:02
+[34mLongitud: 3
+[91mDSAP: Trama individual		Protocolo: NETBIOS
+[93mSSAP: Trama de respuesta		Protocolo: NETBIOS
+[31mControl: Trama no numerada
+[33mNormal/Extendida
+POLL/FINAL: 1 FINAL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Acknowledgment UA|	|Reconoce la conexion|	|De uno de los comandos de modo de configuracion|	
+[0m

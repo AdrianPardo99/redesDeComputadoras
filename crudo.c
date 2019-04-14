@@ -48,6 +48,9 @@ int main(int argc,char **argv){
       }else if(!memcmp("llcFile",argv[1],7)){
         printf("Iniciando analizador LLC en archivo\n");
         initFileLLC(argv[2]);
+      }else if(!memcmp("llcSent",argv[1],7)){
+        printf("Iniciando LLC en forma de enviar datos\n");
+        initSentFileLLC(argv[2]);
       }else{
         printErrorParams();
       }

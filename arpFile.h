@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 10/03/2019
+  Fecha de modificación: 11/04/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -237,11 +237,11 @@ void initScanARP(int des){
       imprimeTramaARP(tramaEnv,60);
       recibeOfRequestOfARP(packet_socket,tramaGet,des);
       if(*(ipD+3)==0xff){
-        *(ipD+3)=0x01;
+        *(ipD+3)=0x00;
         if(*(ipD+2)==0xff){
-          *(ipD+2)=0x01;
+          *(ipD+2)=0x00;
           if(*(ipD+1)==0xff){
-            *(ipD+1)=0x01;
+            *(ipD+1)=0x00;
             *(ipD+0)=*(ipD+0)+1;
           }else{
             *(ipD+1)=*(ipD+1)+1;
