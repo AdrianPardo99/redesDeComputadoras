@@ -9,3 +9,5 @@ De igual forma no olvidar presentar creditos de la autoria, contando en que se p
 
 # Nota
 En el caso de ser alumnos que cursan actualmente la materia de redes de computadoras con el profesor Gilberto Sanchez Quintanilla, sean precavidos en minimo enviarme un correo electronico (de agradecimiento), usar funciones que les sean de utilidad para la matería 
+
+Desarrollador: [Adrian González Pardo D3vcr4ck](mailto:gozapaadr@gmail.com)
