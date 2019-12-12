@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 06/03/2019
+  Fecha de modificación: 12/03/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -18,6 +18,8 @@
 #include "arpFile.h"
 #include "freeARPInfractor.h"
 #include "fileLLC.h"
+#include "icmp.h"
+#include "ping.h"
 
 /*Función que envia mensajes*/
 void estructuraMensaje(datos *trama,datos *message){

@@ -132,19 +132,9 @@ void enumInterface(socketRaw ds){
 		i+=len;
     t++;
   }
-  t=0;
   printf(BGRN"Ingresa el numero de interfaz con la que deseas trabajar: "KNRM);
   scanf("%d",&indice);
-  for(i=0;i<conf.ifc_len;){
-    len=sizeof *nics;
-    if(t==indice){
-      strcpy(nic.ifr_name+0,cpHardware[t]+0);
-      break;
-    }
-    nics=(struct ifreq*)((char*)nics+len);
-		i+=len;
-    t++;
-  }
+  strcpy(nic.ifr_name+0,cpHardware[indice]+0);
 }
 
 /*Función que permite obtener los datos del hardware de red*/
