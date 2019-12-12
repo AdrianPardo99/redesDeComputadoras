@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 07/04/2019
+  Fecha de modificación: 14/04/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -17,9 +17,10 @@
 #include "libErrorApiSocket.h"
 int main(int argc,char **argv){
   if(geteuid()!=0){
-      printf("%sDebe ser ejecutado con privilegios root%s\n",BRED,KNRM);
-      exit(1);
-    }
+    printf("%sEsta aplicación debe ser ejecutado con privilegios root%s\n",
+      BRED,KNRM);
+    exit(1);
+  }
   if(argc>1){
     if(argc>2){
       if(!memcmp("arpScanner",argv[1],10)&&!memcmp("sql",argv[2],3)){
@@ -51,6 +52,9 @@ int main(int argc,char **argv){
       }else if(!memcmp("llcSent",argv[1],7)){
         printf("Iniciando LLC en forma de enviar datos\n");
         initSentFileLLC(argv[2]);
+      }else if(!memcmp("ping",argv[1],4)){
+        printf("Iniciando Ping\n");
+        initPing(argv[2]);
       }else{
         printErrorParams();
       }

@@ -16,8 +16,10 @@ void printErrorParams(){
     " así como su contenido\n%s"
     "serverARPFree -> Inicializa un servidor ARP Gratuito\n%s"
     "infractorARP -> Envia una trama infractoria de ARP Gratuito\n%s"
-    "llcFile -> Inicia un analizador de tramas LLC apartir de un archivo\n%s"
+    "llcFile paramFile.txt -> Inicia un analizador de tramas LLC apartir"
+    " de un archivo\n%s"
     "llcScanner -> Inicia un analizador LLC apartir de la interfaz de red\n%s"
-    "llcSent -> Envia tramas LLC que estan predeterminadas en un archivo\n%s",
+    "llcSent paramFile.txt -> Envia tramas LLC que estan predeterminadas"
+    " en un archivo\n%s",
     KRED,KGRN,KYEL,KCYN,KBLU,KGRN,BCYN,BRED,BBLU,BYEL,KNRM);
 }

@@ -527,13 +527,14 @@ void initFileLLC(char *nameFile){
     analiceLCC(trama);
     writeOutputLLC(trama);
     printf("%s",KNRM);
-    stop(500000);
+    stop(4000000);
     clearScreen();
     linea++;
   }
   fclose(fl);
 }
 
+/*Funcion que envia tramas LLC a partir de un txt*/
 void initSentFileLLC(char *nameFile){
   createSocket();
   openSocket();
@@ -568,7 +569,7 @@ void initSentFileLLC(char *nameFile){
         BRED,linea,BBLU,(int)(strlen(buffer)-2)/2,KNRM);
       imprimeTramaLLC(trama,(int)(strlen(buffer)-2)/2);
       enviaTrama(packet_socket,trama,indice);
-      stop(500000);
+      stop(50000000);
       linea++;
     }
     printf("Exito al enviar todas las tramas del archivo\n");

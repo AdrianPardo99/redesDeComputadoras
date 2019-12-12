@@ -1,0 +1,925 @@
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 47
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 0 P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 PULL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Set asynchronous balanced extended mode SABME|	|Modo de Configuracion Asincrono Balanceado Extendido|	|Usa 7 bits para números de secuencia|	
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 FINAL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Acknowledgment UA|	|Reconoce la conexion|	|De uno de los comandos de modo de configuracion|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 47
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 0 P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 PULL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Set asynchronous balanced extended mode SABME|	|Modo de Configuracion Asincrono Balanceado Extendido|	|Usa 7 bits para números de secuencia|	
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 FINAL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Acknowledgment UA|	|Reconoce la conexion|	|De uno de los comandos de modo de configuracion|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 0
+Número de secuencia que se espera recibir: 0
+POLL/FINAL: 1 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 0
+Número de secuencia que se espera recibir: 1
+POLL/FINAL: 1 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 1
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 1
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 95
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 1
+Número de secuencia que se espera recibir: 2
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 134
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 2
+Número de secuencia que se espera recibir: 2
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 70
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 2
+Número de secuencia que se espera recibir: 3
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 120
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 3
+Número de secuencia que se espera recibir: 3
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 4
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 4
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 190
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 3
+Número de secuencia que se espera recibir: 4
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 120
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 4
+Número de secuencia que se espera recibir: 4
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 190
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 4
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 5
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 1 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 53
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 6
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 53
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 5
+Número de secuencia que se espera recibir: 7
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 7
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 7
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 7
+Número de secuencia que se espera recibir: 6
+POLL/FINAL: 1 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 8
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 8
+Número de secuencia que se espera recibir: 6
+POLL/FINAL: 1 PULL Requiere respuesta inmediata
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 9
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 PULL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Disconnect DISC|	|Terminar la conexion de enlace lógico|	|Para futuras tramas de I y S regresa DM|	
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 FINAL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Acknowledgment UA|	|Reconoce la conexion|	|De uno de los comandos de modo de configuracion|	
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 47
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 0 P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 47
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 0 P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 PULL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Set asynchronous balanced extended mode SABME|	|Modo de Configuracion Asincrono Balanceado Extendido|	|Usa 7 bits para números de secuencia|	
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 FINAL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Acknowledgment UA|	|Reconoce la conexion|	|De uno de los comandos de modo de configuracion|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 47
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 0 P/F Trama de informacion
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Information UI|	|Datos no reconocidos|	|Tiene una carga util|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 PULL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Set asynchronous balanced extended mode SABME|	|Modo de Configuracion Asincrono Balanceado Extendido|	|Usa 7 bits para números de secuencia|	
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 3
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama no numerada
+Normal/Extendida
+POLL/FINAL: 1 FINAL Requiere respuesta inmediata
+
+	Nombre			    Descripcion			Informacion
+|Unnumbered Acknowledgment UA|	|Reconoce la conexion|	|De uno de los comandos de modo de configuracion|	
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 0
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 0
+Número de secuencia que se espera recibir: 0
+POLL/FINAL: 1 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 0
+Número de secuencia que se espera recibir: 1
+POLL/FINAL: 1 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 1
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 1
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 95
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 1
+Número de secuencia que se espera recibir: 2
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 2
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 134
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 2
+Número de secuencia que se espera recibir: 2
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 70
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 2
+Número de secuencia que se espera recibir: 3
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 120
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 3
+Número de secuencia que se espera recibir: 3
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 4
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 4
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 3
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 190
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 3
+Número de secuencia que se espera recibir: 4
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 120
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 4
+Número de secuencia que se espera recibir: 4
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 190
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 4
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 0 P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 18
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de información
+Extendida
+Número de secuencia de envio: 5
+Número de secuencia que se espera recibir: 5
+POLL/FINAL: 1 P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:00:e8:15:bb:75
+MAC Origen: 00:20:18:66:c6:02
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de respuesta		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 6
+Receiver ready (RR)P/F Trama de informacion
+
+MAC Destino: 00:20:18:66:c6:02
+MAC Origen: 00:00:e8:15:bb:75
+Longitud: 4
+DSAP: Trama individual		Protocolo: NETBIOS
+SSAP: Trama de comando		Protocolo: NETBIOS
+Control: Trama de supervisión
+Extendida
+Número de secuencia que se espera recibir: 5
+Receiver ready (RR)P/F Trama de informacion
+

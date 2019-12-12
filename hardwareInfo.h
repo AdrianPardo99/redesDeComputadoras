@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 10/03/2019
+  Fecha de modificación: 12/12/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -100,13 +100,6 @@ void obtenerDatosHardwareOrigen(socketRaw ds){
 
 /*Función que obtiene el indice del hardware de red*/
 socketRaw obtenerDatosIndex(socketRaw ds){
-  printf("%sInserta el nombre de la interfaz de red: %s",BYEL ,KNRM);
-  cpHardware=(char*)malloc(sizeof(char)*(IFNAMSIZ));
-  fflush(stdin);
-  fgets(cpHardware,IFNAMSIZ,stdin);
-  *(cpHardware+sizeChar(cpHardware))='\0';
-  strcpy(nic.ifr_name+0,cpHardware+0);
-  free(cpHardware);
   if(ioctl(ds,SIOCGIFINDEX,&nic) == -1){
     perror("Error en el indice ");
     return -1;
@@ -115,8 +108,48 @@ socketRaw obtenerDatosIndex(socketRaw ds){
   }
 }
 
+
+/*Función que enumera las interfaces de red*/
+void enumInterface(socketRaw ds){
+  confInt conf;
+  char buf[16384];
+	unsigned i;
+  int t=0;
+  size_t len;
+  conf.ifc_len=sizeof buf;
+  conf.ifc_buf=buf;
+  if(ioctl(ds, SIOCGIFCONF,&conf)!=0){
+    perror("ioctl(SIOCGIFCONF)");
+		exit(EXIT_FAILURE);
+  }
+  nics=conf.ifc_req;
+  printf(KYEL"Interfaces de red disponibles: \n"KNRM);
+  for(i=0;i<conf.ifc_len;){
+    len=sizeof *nics;
+    printf(BCYN"\tInterface[%d]: %s\n"KNRM,t,nics->ifr_name);
+    strcpy(cpHardware[t]+0,nics->ifr_name);
+    nics=(struct ifreq*)((char*)nics+len);
+		i+=len;
+    t++;
+  }
+  t=0;
+  printf(BGRN"Ingresa el numero de interfaz con la que deseas trabajar: "KNRM);
+  scanf("%d",&indice);
+  for(i=0;i<conf.ifc_len;){
+    len=sizeof *nics;
+    if(t==indice){
+      strcpy(nic.ifr_name+0,cpHardware[t]+0);
+      break;
+    }
+    nics=(struct ifreq*)((char*)nics+len);
+		i+=len;
+    t++;
+  }
+}
+
 /*Función que permite obtener los datos del hardware de red*/
 void obtainHardwareData(){
+  enumInterface(packet_socket);
   indice = obtenerDatosIndex(packet_socket);
   obtenerDatosHardwareOrigen(packet_socket);
   obtenerDatosIp(packet_socket);

@@ -1,20 +1,35 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 07/04/2019
+  Fecha de modificación: 12/12/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
 
 #include <arpa/inet.h>
 #include <sys/socket.h>
-#include <linux/if_packet.h>
+//#include <linux/if_packet.h>
 #include <net/ethernet.h> /* the L2 protocols */
 #include <sys/ioctl.h>
 #include <net/if.h>
 #include <string.h>
 #include <sys/time.h>
 #include <netinet/in.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <netdb.h>
+#include <asm/types.h>
+#include <linux/netlink.h>
+#include <netpacket/packet.h>
+#include <net/ethernet.h>
+#include <ifaddrs.h>
+#include <linux/rtnetlink.h>
+#include <signal.h>
+#define BUFFER_SIZE 4096
+#define TTLPATH "/proc/sys/net/ipv4/ip_default_ttl"
+#define ICMP_PROT 1
+#define PINGTOTLEN 84
 
 typedef int socketRaw;
 typedef struct ifreq interfaces;
@@ -24,6 +39,10 @@ typedef int dato;
 typedef short tinyDato;
 typedef struct sockaddr_ll tramas;
 typedef struct timeval timer;
+typedef struct ifconf confInt;
+
+volatile sig_atomic_t stopSig;
+
 /*Uso de variables globales para trabajar más adelante con cada libreria de la
 api creada*/
 socketRaw packet_socket;
@@ -54,7 +73,9 @@ ipPrueba[15],
 *sub,
 ipARPFree[4]={0x00,0x00,0x00,0x00},
 *macDefensor,*ipDefensor,macInfractor[6],arpFreeOp[2],
-macComodin[6]={0x00,0x00,0x00,0x00,0x00,0x00};
+macComodin[6]={0x00,0x00,0x00,0x00,0x00,0x00},
+ICMP_ETH[2]={0X08,0X00},MACTarget[6], gatewayIP[4],ipDFar[4],
+trama_icmp[98];
 
 dato mtuO,
 metricO,
@@ -63,14 +84,15 @@ num,
 indice,
 ARPPetition,
 ban=0,
-contador=0;
+contador=0,
+icmpdatabytes = sizeof(trama_icmp)-14;
 
-name *cpHardware,
-binFlags[100],*nameSSID;
+name cpHardware[1000][IFNAMSIZ],
+binFlags[100],*nameSSID,*host;
 
 tinyDato flags;
 
-interfaces nic;
+interfaces nic,*nics;
 
 timer start,end;
 
@@ -126,7 +148,6 @@ int isMyIP(datos *trama){
 int isMyMACArp(datos *trama){
   return !(memcmp(trama+32,macOrigen+0,6));
 }
-
 
 /*Función que verifica si es una solicitud ARP*/
 int isRequestARP(datos *trama){
